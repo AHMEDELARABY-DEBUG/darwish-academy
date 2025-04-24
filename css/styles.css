@@ -1,0 +1,149 @@
+body {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  background: url("../images/header-background.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+}
+
+.header .slide {
+  width: 90%;
+  margin: 0 auto;
+}
+
+textarea {
+  resize: none;
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+.free {
+  -webkit-animation: color_change 1s infinite alternate;
+  -moz-animation: color_change 1s infinite alternate;
+  -ms-animation: color_change 1s infinite alternate;
+  -o-animation: color_change 1s infinite alternate;
+  animation: color_change 1s infinite alternate;
+}
+
+@-webkit-keyframes color_change {
+  from {
+    color: blue;
+  }
+  to {
+    color: red;
+  }
+}
+@-moz-keyframes color_change {
+  from {
+    color: blue;
+  }
+  to {
+    color: red;
+  }
+}
+@-ms-keyframes color_change {
+  from {
+    color: blue;
+  }
+  to {
+    color: red;
+  }
+}
+@-o-keyframes color_change {
+  from {
+    color: blue;
+  }
+  to {
+    color: red;
+  }
+}
+@keyframes color_change {
+  from {
+    color: blue;
+  }
+  to {
+    color: red;
+  }
+}
+.testimonial-slider {
+  background-color: #5072a7;
+  padding: 3em 2em;
+}
+
+.testimonial-title {
+  color: #fff;
+}
+
+.testimonial-title h2 {
+  padding-left: 0.2em;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  height: 100%;
+}
+
+.cntrol-prev,
+.cntrol-next {
+  background-color: #fff;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-50%);
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+@media (min-width: 576px) {
+  .carousel-item-2 {
+    margin-right: 0;
+    flex: 0 0 50%;
+    display: block;
+  }
+  .carousel-inner-2 {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-inner-2 {
+    padding: 1em;
+  }
+  .cntrol-prev,
+  .cntrol-next {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    left: 1em;
+    top: 90%;
+    opacity: 1;
+  }
+  .cntrol-next {
+    left: 4.5em;
+  }
+}
+.invitation-bg {
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/header-slide-2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    background: var(--bs-dark);
+  }
+  .register h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .header .slide {
+    width: 75%;
+  }
+}
